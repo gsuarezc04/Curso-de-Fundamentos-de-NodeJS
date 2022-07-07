@@ -9,15 +9,15 @@ console.log("setInterval():");
 let i = 0;
 let interval = setInterval(() => {
   console.log("Hola");
-  if(i === 3) {
-    clearInterval(interval)
+  if (i === 3) {
+    clearInterval(interval);
   }
   i++;
 }, 1000);
 
 console.log("setImmediate():");
 setImmediate(() => {
-    console.log('Hola de setImmediate')
+  console.log("Hola de setImmediate");
 });
 
 //etc... that can be found in documentation

@@ -9,18 +9,18 @@ const read = (path, cb) => {
 const write = (path, content, cb) => {
   fs.writeFile(path, content, (err) => {
     if (err) {
-      console.error('No he podido escribirlo', err);
+      console.error("No he podido escribirlo", err);
     } else {
-      console.log('Se ha escrito correctamente');
+      console.log("Se ha escrito correctamente");
     }
-  })
-}
+  });
+};
 
 const remove = (path, cb) => {
-  fs.unlink(path, cb)
-}
+  fs.unlink(path, cb);
+};
 
-read(__dirname + '/archivo.txt');
+read(__dirname + "/archivo.txt");
 //write(__dirname + '/archivo1.txt', "Soy un archivo nuevo");
 //remove(__dirname + '/archivo1.txt', console.log);
 
